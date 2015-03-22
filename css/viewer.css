@@ -1,0 +1,1738 @@
+html, body {
+font-family: 'Myriad Pro', Corbel, Tahoma, 'Trebuchet MS', sans-serif;
+font-size: 12px;
+color:#000;
+background: #1a1a1a;
+width: 100%;
+height: 100%;
+padding: 0px;
+margin: 0px;
+overflow:hidden;	
+}
+
+#topDiv{
+background:#1a1a1a;
+background-repeat: repeat-x;
+width: 100%;
+height:50px;
+padding:0px 0px 0px 0px;
+color: #fff;
+overflow:hidden;
+}
+
+#topLeftDiv {
+background: url(../images/diise_text_en.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+height: 20px;
+left: 97px;
+position: absolute;
+width: 340px;
+top:8px;
+}
+
+#topRightDiv {
+position:absolute;
+width:250px;
+height:20px;
+bottom:0px;
+right:390px;
+}
+
+#logos{
+position:absolute;
+top:2px;
+right:5px;
+width:540px;
+height:35px;
+z-index:100;
+}
+
+#help, #language {
+position:absolute;
+top:50px;
+z-index:150;
+font-family: 'Archivo Narrow', sans-serif;
+font-size:13px;
+color:#fff;
+background: #1a1a1a;
+padding:5px 0px 10px 0px;
+margin:0px 0px 0px 0px;
+text-align: right;
+border-bottom-left-radius: 6px;
+-moz-border-bottom-left-radius: 6px;
+-webkit-border-bottom-left-radius: 6px;
+-o-border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
+-moz-border-bottom-right-radius: 6px;
+-webkit-border-bottom-right-radius: 6px;
+-o-border-bottom-right-radius: 6px;
+}
+
+#help {
+width:100px;
+right:460px;
+}
+
+#language {
+width:80px;
+right:540px;
+padding: 5px 0px;
+}
+
+#help a, #logos a {
+color:#fff;
+text-decoration:none;
+}
+
+.links {
+background-color:#1a1a1a;
+padding: 3px 10px 3px 10px;
+cursor:hand;
+cursor:pointer;
+}
+
+.linksHovered {
+background-color:#666666;
+padding: 3px 10px 3px 10px;
+cursor:hand;
+cursor:pointer;
+}
+
+.link_arrow {
+width:7px;
+height:12px;
+background:#1a1a1a url(../images/esri/spriteArrows.png) no-repeat 0px 5px;
+float: left;
+}
+
+#link_options, #link_language_options, #link_partners_options {
+position:absolute;
+width:55px;
+bottom:5px;
+right:10px;
+text-align: right;
+font-family: 'Archivo Narrow', sans-serif;
+font-size:13px;
+color:#fff;
+cursor:hand;
+cursor:pointer;
+}
+
+#link_options {
+right:75px;
+width:58px;
+display:none;
+}
+
+#link_language_options {
+right:155px;
+width:60px;
+}
+
+#language_english, #language_spanish{
+position:relative;
+height: 22px;
+margin: 5px 0px;
+cursor:hand;
+cursor:pointer;
+}
+
+#es_language_app, #en_language_app{
+top: 1px;
+left: 8px;
+}
+
+#language_english_text, #language_spanish_text  {
+position:absolute;
+right: 10px;
+height: 22px;
+line-height:22px;
+}
+
+#progressBarDiv {
+position: absolute;
+background: url(../images/progressBar.gif) repeat-x scroll center center #CAD2DE;
+border: 1px solid #A2A2A2;
+display: none;
+width: 300px;
+height: 20px;
+left: 0px;
+top: 0px;
+z-index: 101;
+}
+
+#dashboardDiv {
+background: url(../images/dashboard.png) no-repeat bottom right;
+position:absolute;
+height:40px;
+width:440px;
+top:39px;
+left:0px;
+z-index:100;
+}
+
+#logoDiv{
+position:absolute;
+width:133px;
+height:60px;
+bottom:10px;
+left:12px;
+border-left:1px;
+background: url(../images/logos/diise_logo.png) no-repeat left center;
+background-size:contain;
+}
+
+#dashboardDivCenter {
+position:absolute;
+height:40px;
+top:-5px;
+right:20px;
+padding:0px 0px 0px 0px;
+}
+
+#searchToolDiv, #resultsToolDiv, #islandsToolDiv, #exportTableToolDiv, #printToolDiv {
+position:relative;
+width:50px;
+height:40px;
+margin: 0px 5px 0px 0px;
+float:left;
+cursor:pointer;
+cursor:hand;
+background-repeat: no-repeat;
+}
+
+#searchToolDiv {
+background-image: url(../images/dashboard_sprites/searchTool_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px -40px;
+}
+
+#resultsToolDiv {
+background: url(../images/dashboard_sprites/resultsTool_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+
+#islandsToolDiv {
+background: url(../images/dashboard_sprites/islandTool_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+
+#exportTableToolDiv {
+background: url(../images/dashboard_sprites/exportTableTool_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+
+#printToolDiv {
+background: url(../images/dashboard_sprites/printTool_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+
+#printOptionsDiv, #csvOptionsDiv{
+position: absolute;
+width:150px;
+z-index: 102;
+}
+
+#printOptionsDiv{
+width:175px;
+top: 36px;
+left: 377px;
+}
+
+#csvOptionsDiv{
+top: 36px;
+left: 209px;
+}
+
+#printOptionsToolTip,#csvOptionsToolTip{
+position:absolute;
+width:12px;
+height:10px;
+top:-7px;
+background:url(../images/tooltip_point.png) no-repeat top center;
+}
+
+#printOptionsToolTip{
+left:7px;
+}
+
+#csvOptionsToolTip{
+left:124px;
+}
+
+#printOptionsContent, #csvOptionsContent{
+background:#1a1a1a;
+padding:10px;
+border:1px solid #4d4d4d;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+ box-shadow: 2px 2px 6px #6a6a6a;
+ -moz-box-shadow: 2px 2px 6px #6a6a6a;
+-webkit-box-shadow: 2px 2px 6px #6a6a6a;
+-o-box-shadow: 2px 2px 6px #6a6a6a;
+}
+
+#printOptionsTextNode, #csvOptionsTextNode{
+color:#fff;
+font-size:13px;
+font-weight:bold;
+text-align:center;
+margin:0px 0px 15px 0px;
+}
+
+#printOptionsDownload, #csvOptionsDownload{
+position:relative;
+margin:15px 0px 0px 0px;
+text-align:center;
+height:20px;
+}
+
+#csvOptionsDownload{
+margin:15px 0px 5px 0px;
+}
+
+#printOptionsFormat{
+position:relative;
+color:#fff;
+font-size:11px;
+margin:15px 0px 0px 0px;
+}
+
+#printOptionsFormat td{
+text-align:center;
+width:33%;
+}
+
+#printOptionsFormat label{
+position:relative;
+top:1px;
+}
+
+#baseMapOptionDiv {
+display:none;
+position: absolute;
+width:110px;
+top: 10px;
+right: 150px;
+z-index: 102;
+}
+
+#baseMapSelector{
+position:relative;
+top:0px;
+left:0px;
+width:30px;
+height:30px;
+cursor:pointer;
+cursor:hand;
+background:#1a1a1a url(../images/navIcon_sprites/basemapIcon_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+border: 1px solid #4d4d4d;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+
+#baseMapToolTip{
+position:absolute;
+width:12px;
+height:10px;
+top:-8px;
+left:13px;
+background:url(../images/tooltip_point.png) no-repeat top center;
+}
+
+#baseMapSelectorTextNode{
+text-align:center;
+width:90px;
+padding:4px 0px 0px 0px;
+font-size:14px;
+}
+
+#baseMapSelectorArrowNode{
+padding:0px 0px 0px 0px;
+}
+
+#baseMapSelectorArrow{
+position:absolute;
+top:12px;
+right:10px;
+width:7px;
+height:7px;
+background:#1a1a1a url(../images/esri/spriteArrows.png) no-repeat 0px 0px;
+display:none;
+}
+
+#baseMapSelectorOptions{
+font-family: 'Archivo Narrow', sans-serif;
+font-size: 13px;
+margin-top:10px;
+position:relative;
+left: -5px;
+width:120px;
+background:#1a1a1a;
+color:#fff;
+padding:7px 0px 7px 0px;
+border:1px solid #4d4d4d;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+ box-shadow: 2px 2px 6px #6a6a6a;
+ -moz-box-shadow: 2px 2px 6px #6a6a6a;
+-webkit-box-shadow: 2px 2px 6px #6a6a6a;
+-o-box-shadow: 2px 2px 6px #6a6a6a;
+}
+
+.baseMapOption {
+height:22px;
+background-color:#1a1a1a;
+padding:8px 5px 0px 8px;
+cursor:pointer;
+cursor:hand;
+}
+
+.baseMapOptionHovered {
+height:22px;
+background-color:#666666;
+padding:8px 5px 0px 8px;
+cursor:pointer;
+cursor:hand;
+}
+
+.baseMapOptionImg {
+position: relative;
+left:0px;
+top:-5px;
+width:24px;
+height:24px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+float:left;
+margin:0px 8px 0px 0px;
+}
+
+#basic_img{
+background:url(../images/newicons/basic.png) no-repeat center center;
+}
+
+#satellite_img{
+background:url(../images/newicons/satellite.png) no-repeat center center;
+}
+
+#topographic_img{
+background:url(../images/newicons/topographic.png) no-repeat center center;
+}
+
+#zoomToolsDiv {
+position:absolute;
+width:160px;
+height:32px;
+right: 60px;
+top: 10px;
+display:none;
+z-index: 103;
+cursor:hand;
+}
+
+#zoomInToolDiv, #zoomOutToolDiv, #zoomFullToolDiv , #overviewDiv, #zoomNavToolDiv, #helpSelector {
+position:relative;
+width:30px;
+height:30px;
+margin: 0px 8px 0px 0px;
+float:right;
+cursor:pointer;
+cursor:hand;
+border: 1px solid #4d4d4d;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+}
+
+#zoomNavToolDiv {
+background:#1a1a1a;
+}
+
+#zoomInIncrementDiv, #zoomOutIncrementDiv {
+width:30px;
+height:15px;
+}
+
+#zoomInIncrementDiv {
+border-bottom: 1px solid #4d4d4d;
+background:url(../images/navIcon_sprites/zoomIncrement_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+
+#zoomOutIncrementDiv {
+background:url(../images/navIcon_sprites/zoomDecrement_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+
+#zoomInToolDiv {
+background:#1a1a1a url(../images/navIcon_sprites/zoomInToolIcon_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+
+#zoomFullToolDiv {
+background:#1a1a1a url(../images/navIcon_sprites/zoomFullToolIcon_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+
+#overviewDiv {
+background:#1a1a1a url(../images/navIcon_sprites/overviewIcon_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px -30px;
+}
+
+#helpOptionDiv {
+display:none;
+position: absolute;
+width:120px;
+top: 10px;
+right: 20px;
+z-index: 102;
+}
+
+#helpSelectorOptions{
+position:relative;
+margin-top: 40px;
+padding:7px 0px 7px 0px;
+width: 108px;
+left: 5px;
+font-family: 'Archivo Narrow', sans-serif;
+font-size: 13px;
+text-align: right;
+color:#fff;
+background:#1a1a1a;
+border:1px solid #4d4d4d;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+ box-shadow: 2px 2px 6px #6a6a6a;
+ -moz-box-shadow: 2px 2px 6px #6a6a6a;
+-webkit-box-shadow: 2px 2px 6px #6a6a6a;
+-o-box-shadow: 2px 2px 6px #6a6a6a;
+}
+
+#helpSelector{
+position:relative;
+top:0px;
+left:0px;
+width:30px;
+height:30px;
+cursor:pointer;
+cursor:hand;
+background:#1a1a1a url(../images/navIcon_sprites/helpIcon_sprite.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+border: 1px solid #4d4d4d;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+
+#helpToolTip{
+position:absolute;
+width:12px;
+height:10px;
+top:-8px;
+right:13px;
+background:url(../images/tooltip_point.png) no-repeat top center;
+}
+
+#helpSelectorOptions a {
+color:#fff;
+text-decoration:none;
+}
+
+#islandDiv {
+margin: 20px 0px 0px 0px;
+}
+
+.dialogClose{
+position:absolute;
+top:7px;
+right:5px;
+width:16px;
+height:16px;
+background:url("../images/close.png");
+cursor:hand;
+cursor:pointer;
+}
+
+.dialogToggle{
+position:absolute;
+top:7px;
+right:25px;
+width:20px;
+height:16px;
+background: url("../images/esri/down-arrow.png") no-repeat center right;
+cursor:hand;
+cursor:pointer;
+}
+
+#searchContentDiv, #resultsContentDiv, #islandContentDiv, #ovContentDiv {
+position:absolute;
+background: #fff;
+display:none;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+box-shadow: 2px 2px 6px #6a6a6a;
+-moz-box-shadow: 2px 2px 6px #6a6a6a;
+-webkit-box-shadow: 2px 2px 6px #6a6a6a;
+-o-box-shadow: 2px 2px 6px #6a6a6a;
+z-index: 101;
+margin:5px;
+}
+
+#searchContentDiv{
+top:60px;
+left:20px;
+width:350px;
+}
+
+#searchContentDiv .dijitTitlePaneTitleFocus, #resultsContentDiv .dijitTitlePaneTitleFocus, #islandContentDiv .dijitTitlePaneTitleFocus{
+font-family: 'Archivo Narrow', sans-serif;
+font-weight: bold;
+font-size: 18px;
+background:#1a1a1a;
+height: 24px;
+}
+
+#geography .dijitTitlePaneTitleFocus, #invasive .dijitTitlePaneTitleFocus, #eradication .dijitTitlePaneTitleFocus{
+font-size:15px;
+background:none;
+height: 20px;
+}
+
+#resultsContentDiv{
+top:395px;
+left:20px;
+width:350px;
+}
+
+#islandContentDiv{
+top:205px;
+right:20px;
+width: 300px;
+}
+
+#ovContentDiv{
+top:50px;
+right:20px;
+width: 235px;
+background:none;
+display:block;
+box-shadow: none;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+-o-box-shadow: none;
+}
+
+#ovContentDiv  .dijitTitlePaneContentOuter{
+background:none;
+}
+
+.esriOverviewMap .map {
+background-color: none;
+}
+
+#ovContent {
+position:relative;
+width: 235px;
+height: 125px;
+overflow: hidden;
+background:none;
+}
+
+#islandContent{
+width: 280px;
+}
+
+#searchContentDiv .dijitTitlePaneTitle, #resultsContentDiv .dijitTitlePaneTitle, #islandContentDiv .dijitTitlePaneTitle, #ovContentDiv .dijitTitlePaneTitle {
+border-top-left-radius: 4px;
+-moz-border-top-left-radius: 4px;
+-webkit-border-top-left-radius: 4px;
+-o-border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+-moz-border-top-right-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-o-border-top-right-radius: 4px;
+}
+
+#searchContentDiv .dijitTitlePaneTitle.dijitClosed, #resultsContentDiv .dijitTitlePaneTitle.dijitClosed, #islandContentDiv .dijitTitlePaneTitle.dijitClosed, #ovContentDiv .dijitTitlePaneTitle.dijitClosed {
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+}
+
+#searchContentDiv .dijitTitlePaneContentOuter, #resultsContentDiv .dijitTitlePaneContentOuter, #islandContentDiv .dijitTitlePaneContentOuter, #ovContentDiv .dijitTitlePaneContentOuter {
+border-bottom-left-radius: 4px;
+-moz-border-bottom-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-o-border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+-moz-border-bottom-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-o-border-bottom-right-radius: 4px;
+}
+
+#geography .dijitTitlePaneTitle, #geography .dijitTitlePaneTitle.dijitClosed {
+border-radius: 0px;
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+-o-border-radius: 0px;
+border-top-left-radius: 4px;
+-moz-border-top-left-radius: 4px;
+-webkit-border-top-left-radius: 4px;
+-o-border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+-moz-border-top-right-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-o-border-top-right-radius: 4px;
+}
+
+#invasive .dijitTitlePaneTitle , #invasive .dijitTitlePaneTitle.dijitClosed   {
+border-radius: 0px;
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+-o-border-radius: 0px;
+}
+
+#eradication .dijitTitlePaneTitle {
+border-radius: 0px;
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+-o-border-radius: 0px;
+border-bottom-left-radius: 0px;
+-moz-border-bottom-left-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+-o-border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+-moz-border-bottom-right-radius: 0px;
+-webkit-border-bottom-right-radius: 0px;
+-o-border-bottom-right-radius: 0px;
+}
+
+#eradication .dijitTitlePaneTitle.dijitClosed {
+border-radius: 0px;
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+-o-border-radius: 0px;
+border-bottom-left-radius: 4px;
+-moz-border-bottom-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-o-border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+-moz-border-bottom-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-o-border-bottom-right-radius: 4px;
+}
+
+#eradication  .dijitTitlePaneContentInner {
+border-bottom-left-radius: 4px;
+-moz-border-bottom-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-o-border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+-moz-border-bottom-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-o-border-bottom-right-radius: 4px;
+}
+
+#galleryContentDiv {
+display:none;
+width:100%;
+height:54px;
+}
+
+#galleryContent {
+width:100%;
+height:50px;
+background: transparent url('../images/carousel/image-loader.gif') no-repeat 50% 50%;
+}
+
+#gallery{
+position:relative;
+width:100%;
+height:50px;
+}
+
+#noThumbnails {
+position:absolute;
+width:100%;
+top:30px;
+text-align:center !important;
+}
+
+#gallery ul {
+margin: 0px;
+}
+
+#gallery  li img{
+width: 50px;
+height: 50px;
+}
+
+#infoTabs {
+display:none;
+}
+
+#islandTitle {
+margin:0px 0px 5px 0px;
+font-weight:bold;
+text-align:center;
+}
+
+.eradicationLink {
+text-decoration:none;
+color:#000;
+cursor:hand;
+cursor:pointer;
+}
+
+.eradicationLinkOver {
+text-decoration:underline;
+color:#D9310B;
+cursor:hand;
+cursor:pointer;
+}
+
+#searchContent{
+width: 330px;
+}
+
+#drawToolsDiv {
+position:relative; width:100%; height:20px; margin:10px 0px 0px 0px;
+}
+
+#graphicText {
+position:absolute; top:0px; left:2px; width:50px; cursor:hand; cursor:pointer; padding-top:2px;
+}
+
+#extentSelect {
+position:absolute; 
+top:0px; 
+left:78px; 
+width:100px; 
+cursor:hand; 
+cursor:pointer; 
+padding:2px 2px 1px 4px; 
+border:none; 
+background: none;
+}
+
+#polySelect {
+position:absolute; 
+top:0px; 
+left:198px; 
+width:100px; 
+cursor:hand; 
+cursor:pointer; 
+padding:2px 2px 1px 4px;
+border:none; 
+background: none;
+}
+
+.drawToolIcon {
+position:relative; width:18px; height:18px; float:left;
+}
+
+.drawToolText {
+position:relative; width:75px; height:18px; float:left;
+}
+
+#buttonDiv {
+margin: 5px 0px 0px 0px;
+text-align: center;
+}
+
+#resultsContent{
+width: 330px;
+padding:0px 0px 10px 0px;
+}
+
+#queryDefinition {
+margin:0px 0px 10px 0px;
+padding:5px;
+border:1px solid #ccc;
+background:#eee;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+}
+
+#r_threats_type, #r_invasives_type {
+margin:5px 0px 0px 0px;
+padding:2px 5px 7px 5px;
+border:1px solid #ccc;
+background:#eee;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+}
+
+#r_invasives{
+padding: 2px 0px 5px 5px;
+}
+
+#r_islands {
+padding: 5px 0px 0px 5px;
+}
+
+#r_threats_spp_type, #r_breeding_type , #r_invasives_spp_type, #r_invasives_status_type {
+margin:2px 2px 0px 5px;
+padding:2px 0px 2px 5px;
+border:1px dotted #ccc;
+background:#f5f5f5;
+}
+
+#island_threat_types, #island_invasive_types, #island_details {
+padding:5px;
+border:1px solid #ccc;
+background:#eee;
+overflow:auto;
+height:150px;
+}
+
+.maptooltip {
+padding: 5px;
+position: absolute;
+width: 100px;
+z-index: 9999;
+text-align:center;
+font:normal normal normal 8pt Arial;
+color: white;
+background-color: #000000;
+border: 1px solid #ffffff;
+opacity:0.7;
+filter:alpha(opacity=80); /* For IE8 and earlier */
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+ box-shadow: 2px 2px 6px #6a6a6a;
+ -moz-box-shadow: 2px 2px 6px #6a6a6a;
+-webkit-box-shadow: 2px 2px 6px #6a6a6a;
+-o-box-shadow: 2px 2px 6px #6a6a6a;
+}
+
+.toggleImages {
+position:relative;
+top:4px;
+}
+
+.i_header {
+font-weight:bold;
+color:#444444;
+vertical-align:center;
+background:#ccccca;
+padding:2px;
+}
+
+.i_red_list, .r_red_list {
+font-size:85%;
+vertical-align:center;
+text-align:center;
+}
+
+.lc, .nt, .vu, .en, .cr, .ew, .ex {
+}
+
+.confirm, .probable, .potential, .data_deficient, .extirpated, .extinct, .introduced, .na {
+}
+
+.r_scientific_name, .i_scientific_name {
+font-size:95%;
+font-style:italic;
+text-align:center;
+vertical-align:center;
+}
+
+.i_present_breeding {
+font-size:95%;
+}
+
+.i_historic_breeding, .r_common_name, .i_common_name   {
+font-size:85%;
+color:#666;
+}
+
+.i_status {
+font-size:95%;
+text-align:center;
+vertical-align:center;
+}
+
+.i_header .i_common_name, .i_header .i_historic_breeding {
+color:#444444;
+}
+
+.r_count {
+font-size:95%;
+vertical-align:center;
+}
+
+#r_threatened_on_islands {
+margin:5px 0px 0px 0px;
+border-top-left-radius: 4px;
+-moz-border-top-left-radius: 4px;
+-webkit-border-top-left-radius: 4px;
+-o-border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+-moz-border-top-right-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-o-border-top-right-radius: 4px;
+}
+
+#r_invasives_on_islands {
+margin:2px 0px 0px 0px;
+border-bottom-left-radius: 4px;
+-moz-border-bottom-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-o-border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+-moz-border-bottom-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-o-border-bottom-right-radius: 4px;
+}
+
+#r_invasives_on_islands  .dijitTitlePaneContentInner {
+border-bottom-left-radius: 4px;
+-moz-border-bottom-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-o-border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+-moz-border-bottom-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-o-border-bottom-right-radius: 4px;
+}
+
+.summarySubItem {
+display:none;
+margin:0px 0px 0px 0px;
+cursor:hand;
+cursor:pointer;
+}
+
+.summaryItem {
+cursor:hand;
+cursor:pointer;
+}
+
+.summarySubItemTable {
+width:100%;
+border:1px solid #cccccc;
+margin:4px 0px 4px 0px;
+}
+
+.islandSummaryItem {
+cursor:hand;
+cursor:pointer;
+}
+
+.rowOdd {
+background:#e5e5e1;
+}
+
+.rowEven {
+background:#ffffff;
+}
+
+.hovered {
+background: #e0eefc;
+}
+.definitionCategory{ padding:10px;background:#eeeeee;border:1px solid #cccccc; overflow:auto; height:260px;}
+.definition {padding:10px;border:1px dotted #ccc;background:#f5f5f5; }
+.definitionName {padding-left:3px;font-variant:small-caps;font-weight:bold;cursor:pointer; cursor:hand;}
+.definitionSub{ display:none;padding:0px 10px;}
+
+.aboutHeader {
+font-variant:small-caps;
+font-weight:bold;
+color:#404040;
+}
+
+#tableClose{
+position: absolute;
+width:55px;
+height:25px;
+right:10px;
+bottom:-8px;
+padding:2px 0px 0px 5px;
+font-family:'Archivo Narrow', sans-serif;
+font-size:13px;
+font-weight:bold;
+color:#fff;
+background:#1a1a1a;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+box-shadow: 2px 2px 6px #6a6a6a;
+-moz-box-shadow: 2px 2px 6px #6a6a6a;
+-webkit-box-shadow: 2px 2px 6px #6a6a6a;
+-o-box-shadow: 2px 2px 6px #6a6a6a;
+z-index:102;
+display:none;
+cursor:hand;
+cursor:pointer;
+}
+
+#tableArrow {
+height: 7px;
+width: 7px;
+background: #1a1a1a url("../images/esri/spriteArrows.png") no-repeat -14px 0px;
+}
+
+#tableDiv {
+background:#000000;
+}
+
+#tableExport {
+position: absolute;
+width:16px;
+height:16px;
+left:3px;
+top:3px;
+z-index:1000;
+cursor:hand;
+cursor:pointer;
+overflow:hidden;
+background-image: url(../images/grid/table-export.png) !important;
+background-position:0px 0px;
+}
+
+#csvForm{
+position: absolute;
+width:0px;
+height:0px;
+left:0px;
+top:0px;
+overflow:hidden;
+display:none;
+z-index:100;
+}
+
+.redListTooltip {
+font-family: 'Myriad Pro', Corbel, Tahoma, 'Trebuchet MS', sans-serif;
+font-size: 12px;
+text-align:center;
+}
+
+#searchContent .dijitTitlePaneTitle, #resultsContent  .dijitTitlePaneTitle {
+font-variant:normal;
+background: none repeat scroll 0 0 #828282;
+color:#fff;
+}
+
+#searchContent  .dijitTitlePaneContentInner  {
+border:1px solid #ccc;
+}
+
+#resultsContent  .dijitTitlePaneContentInner {
+padding:5px 10px 10px 10px;
+border:1px solid #ccc;
+}
+
+#tableDiv .dijitTabPaneWrapper {
+background: none repeat scroll 0 0 #2B3A42;
+}
+
+#ovContentDiv .dijitTitlePaneContentInner {
+padding:0px;
+}
+
+#experts{
+font-weight:bold;
+text-decoration:underline;
+cursor:hand;
+cursor:pointer;
+}
+
+#about_underlay, #disclaimer_underlay,#termsOfUse_underlay,#errors_underlay,#definitions_underlay,#contributors_underlay, #news_underlay , #donate_underlay, #partners_underlay , #eradicationDetails_underlay, #csvExportError_underlay{
+background-color:#404040;
+}
+
+.tundra .dijitTooltipContainer {
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+padding:5px;
+max-width:150px;
+}
+
+#about .dijitDialogPaneContent, #news .dijitDialogPaneContent , #disclaimer .dijitDialogPaneContent ,#termsOfUse .dijitDialogPaneContent ,#errors .dijitDialogPaneContent,#donate .dijitDialogPaneContent {
+font-size: 14px;
+}
+
+.dialogContent {
+display:none;
+}
+
+.tundra .dijitDialog {
+border: 1px solid #404040;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+box-shadow: 2px 2px 6px #6a6a6a;
+-moz-box-shadow: 2px 2px 6px #6a6a6a;
+-webkit-box-shadow: 2px 2px 6px #6a6a6a;
+-o-box-shadow: 2px 2px 6px #6a6a6a;
+}
+
+.tundra .dijitDialogTitleBar {
+background: none repeat scroll 0 0 #1a1a1a;
+}
+
+.tundra .dijitDialogTitle {
+font-size: 16px;
+font-weight: bold;
+font-variant:small-caps;
+color:#fff;
+}
+
+.dijitDialogPaneContent {
+width: 600px !important;
+padding: 15px;
+}
+
+.tundra .dijitTitlePaneTitle {
+font-family: Trebuchet MS, Tahoma;
+font-weight:bold;
+font-size:14px;
+color:#fff;
+background: url('../images/titlePaneTitle_Background.png') repeat-y scroll 0 0 #1a1a1a;
+background: #1a1a1a;
+border: 0 solid #000000;
+padding: 1px 4px 5px 4px;
+}
+
+.tundra .dijitDialogCloseIconHover {
+background: url("../images/esri/tabCloseHover.png") no-repeat scroll right top transparent;
+}
+
+.tundra .dijitTitlePaneContentOuter {
+-moz-border-bottom-colors: none;
+-moz-border-image: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+background: none repeat scroll 0 0 #FFFFFF;
+border-color: -moz-use-text-color #BFBFBF #BFBFBF;
+border-right: 0 solid #BFBFBF;
+border-style: none solid solid;
+border-width: 0;
+}
+
+.tundra .dijitTitlePane .dijitArrowNode {
+background-image: url("../images/esri/spriteArrows.png");
+background-image:none;
+}
+
+/*filterSelect Styles*/
+.tundra .dijitReset .dijitMenuItem {
+font-family: 'Myriad Pro', Tahoma, 'Trebuchet MS', sans-serif;
+padding:2px 5px;
+}
+
+.tundra .dijitReset  .dijitMenuItemHover, .tundra .dijitMenuItemSelected{
+background-color: #60A1EA;
+}
+
+/*Zoom Slider Styles*/
+.tundra .dijitSliderRemainingBarH {
+background: #60707F;
+outline: none;
+}
+
+.tundra .dijitSliderRightBumper {
+background: #60707F;
+}
+
+.dijitSliderBumperH {
+    border-width: 0px 0 !important;
+    height: 4px;
+    width: 8px;
+}
+
+.tundra .dijitSliderBar {
+border-style: solid;
+outline: none;
+}
+
+
+.tundra .dijitButtonText {
+    padding: 0 0.3em;
+    text-align: center;
+    font-family: 'Archivo Narrow';
+    font-size: 14px;
+}
+
+.dijitSliderBarH {
+border-width: 0px 0 !important;
+height: 4px;
+}
+
+.tundra .dijitSliderProgressBarH {
+    background: #303840 !important;
+}
+
+.tundra .dijitSliderFocused .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderLeftBumper {
+    background: #303840 !important;
+}
+
+.tundra .dijitSliderIncrementIconH {
+background-position: 0px;
+}
+
+.tundra .dijitSliderDeccrementIconH {
+background-position: 0px;
+}
+
+.tundra .dijitSliderLeftBumper {
+background: #303840 ;
+}
+
+.tundra .dijitSliderIncrementIconH, .tundra .dijitSliderIncrementIconV {
+background-image: url("../images/newicons/zoomInIcon.png");
+background-repeat: no-repeat;
+cursor: pointer;
+height: 20px;
+width: 20px;
+}
+
+.tundra .dijitSliderDecrementIconH, .tundra .dijitSliderDecrementIconV {
+background-image: url("../images/newicons/zoomOutIcon.png");
+background-repeat: no-repeat;
+cursor: pointer;
+height: 20px;
+width: 20px;
+}
+
+.tundra .dijitSliderImageHandleH {
+background: url("../images/newicons/ZoomSlider.png") no-repeat scroll center top transparent !important;
+border: 0 none;
+height: 16px;
+width: 16px;
+}
+.dijitSliderImageHandleH {
+left: 50%;
+top: -6px;
+vertical-align: top;
+}
+
+.tundra .dijitSplitter{
+background: none repeat scroll 0 0 #1a1a1a !important;
+}
+
+#tableDiv_splitter .dijitSplitterThumb {
+height:2px;
+background: none repeat scroll 0 0 #fff !important;
+}
+
+#centerDiv{
+text-align:left;
+background:#B7E3FE;
+padding:0px;
+margin:0px;
+width: 100%;
+}
+
+#footerDiv {
+background:#1a1a1a;
+height:26px;
+width: 100%;
+margin:0px;
+overflow:hidden;
+}
+
+#social {
+position:absolute;
+width:400px;
+height:20px;
+top:0px;
+left:145px;
+text-align:left;
+display:block;
+}
+
+#facebookDiv{
+position:absolute;
+top:1px;
+left:0px;
+width:20px;
+height:20px;
+margin-top:2px;
+}
+
+#facebookImg {
+margin:0px 0px 0px 0px;
+}
+
+#twitterDiv{
+position:absolute;
+top:1px;
+left:26px;
+width:20px;
+height:20px;
+margin-top:3px;
+}
+
+#twitterImg {
+margin:0px 0px 0px 0px;
+}
+
+#twittershare{
+position:absolute;
+width:110px;
+height:20px;
+top:0px;
+right:0px;
+}
+
+#donateDiv{
+position:absolute;
+top:1px;
+left:52px;
+width:20px;
+height:20px;
+margin-top:2px;
+cursor:hand;
+cursor:pointer;
+}
+
+#cisr {
+position:absolute;
+width:350px;
+top:6px;
+right:15px;
+font-size:10px;
+color:#fff;
+text-align:right;
+}
+
+#cisr a {
+color:#fff;
+text-decoration:none;
+}
+
+#partnersContent .images td {
+text-align:center;
+vertical-align:bottom;
+}
+
+#partnersContent .text {
+height:60px;
+}
+
+#partnersContent .text td {
+text-align:center;
+vertical-align:top;
+padding: 0px 5px;
+}
+
+.detailsHeader {
+font-size: 12pt;
+font-weight:bold;
+font-variant:small-caps;
+color: #3F5765
+}
+
+.refHeader {
+color: #3F5765;
+font-weight: bold;
+}
+
+#eradicationDetailsTable a {
+text-decoration: none;
+color: #000;
+cursor:hand;
+cursor:pointer;
+}
+
+.onlineClick {
+width: 40px;
+height: 16px;
+border-radius:6px;
+line-height:16px;
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+color: #3F5765;
+border: 1px solid #3F5765;
+cursor:pointer;
+cursor:hand;
+font-family: 'Archivo Narrow', sans-serif;
+font-size: 10px;
+}
+
+.dojoxGridMasterHeader {
+    position: relative;
+	height:21px !important;
+}
+.tundra .dojoxGridSortBtn {
+padding-top:0px !important;
+}
+
+.tundra .dojoxGridSortNodeAsc .dojoxGridSortBtnSingle, .tundra .dojoxGridCellOver .dojoxGridSortNodeAsc .dojoxGridSortBtnSingle {
+	background-position: -119px 4px;
+}
+
+.tundra .dojoxGridCellOver .dojoxGridSortNodeAsc .dojoxGridSortBtnNested, .tundra .dojoxGridCellSortFocus .dojoxGridSortNodeAsc .dojoxGridSortBtnNested {
+	background-position: -91px 4px;
+}
+
+.tundra .dojoxGridCellOver .dojoxGridSortBtnNested, .tundra .dojoxGridCellSortFocus .dojoxGridSortBtnNested {
+	background-position: -91px 4px;
+}
+
+.tundra .dojoxGridCellOver .dojoxGridSortBtnSingle, .tundra .dojoxGridCellSortFocus .dojoxGridSortBtnSingle {
+	background-position: -119px 4px;
+}
+
+.tundra .dojoxGridCellOver .dojoxGridSortNodeAsc .dojoxGridSortBtnSingle, .tundra .dojoxGridCellSortFocus .dojoxGridSortNodeAsc .dojoxGridSortBtnSingle, .tundra .dojoxGrid .dojoxGridCellOver .dojoxGridSortNode .dojoxGridSortBtnAsc, .tundra .dojoxGrid .dojoxGridCellSortFocus .dojoxGridSortNode .dojoxGridSortBtnAsc {
+	background-position: -99px 4px;
+}
+
+.tundra .dojoxGridSortNodeDesc .dojoxGridSortBtnSingle, .tundra .dojoxGridCellOver .dojoxGridSortNodeDesc .dojoxGridSortBtnSingle  {
+	background-position: -99px 4px;
+}
+
+.tundra .dojoxGridCellOver .dojoxGridSortNodeDesc .dojoxGridSortBtnNested, .tundra .dojoxGridCellSortFocus .dojoxGridSortNodeDesc .dojoxGridSortBtnNested {
+	background-position: -111px 4px;
+}
+
+.tundra .dojoxGridCellOver .dojoxGridSortNodeDesc .dojoxGridSortBtnSingle, .tundra .dojoxGridCellSortFocus .dojoxGridSortNodeDesc .dojoxGridSortBtnSingle, .tundra .dojoxGrid .dojoxGridCellOver .dojoxGridSortNode .dojoxGridSortBtnDesc, .tundra .dojoxGrid .dojoxGridCellSortFocus .dojoxGridSortNode .dojoxGridSortBtnDesc {
+	background-position: -119px 4px;
+}
+
+.identify_row_tool, .zoom_to_row_tool  {
+width:100%;
+height:20px;
+padding:0px 0px 0px 4px;
+}
+
+.grid_circle {
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+cursor:pointer;
+cursor:hand;
+}
+
+.identify_row  {
+width:16px;
+height: 16px;
+border-radius: 16px;
+line-height:16px;
+background: #26AAE1;
+color:#fff;
+font-size: 13px;
+font-family: Times New Roma, serif;
+font-weight:bolder;
+}
+
+.zoom_to_row{
+width:10px;
+height: 10px;
+border-radius: 10px;
+line-height:10px;
+border: 2px solid #3c3c3c;
+color:#3c3c3c;
+font-size: 13px;
+font-family: Chango;
+}
+
+.zoom_to_row_tool {
+padding: 5px 0px 0px 8px;
+}
+
+.identify_row_tool {
+padding: 2px 0px 0px 6px;
+}
+
+.termsDivAgree{
+position:relative;
+top:0px;
+padding: 0px 0px 10px 0px;
+text-align:center;
+}
+
+.termsDivButton {
+margin-top:10px;
+text-align:center;
+}
+
+.termsCheckLabel {
+position: relative;
+top:2px;
+font-weight:bold;
+color:#1a1a1a;
+}
+
+#chartDiv {
+display:block;
+width:100%;
+height:300px;
+text-align:center;
+margin:0px 0px 10px 0px;
+}
+
+#chartNode{
+display:block;
+width:500px;
+}
+
+#chartNodeText{
+text-align:center;
+position:relative;
+top:-5px;
+}
+
+#termsOfUseContent{
+padding-right: 10px;
+}
+
+#userInfoTermsDiv{
+position:relative;
+margin: 0px 20px;
+top: 0px;
+}
+
+#userInfoTermsTitle{
+position:relative;
+text-align:left;
+font-weight: bold;
+font-variant: small-caps;
+padding: 0 0 5px 5px;
+color:#000000;
+}
+
+#userInfoTermsContent{
+position:relative;
+height:155px;
+border:1px dotted #ccc;
+background:#f5f5f5;
+}
+
+#userNameDiv, #emailDiv, #orgDiv, #countryDiv, #purposeDiv {
+position:absolute;
+height:24px;
+}
+#userNameDiv{
+left:10px;
+top:10px;
+width: 300px;
+}
+#emailDiv{
+right:12px;
+top:10px;
+width: 205px;
+}
+#orgDiv{
+left:10px;
+top:45px;
+width:400px;
+}
+#countryDiv{
+right:12px;
+top:45px;
+width:105px;
+}
+#purposeDiv{
+left:10px;
+top:80px;
+width:510px;
+height:60px;
+} 
+#purposeText{
+position:absolute;
+width:50%;
+top:5px;
+left:5px;
+color: #aaaaaa;
+font-style: italic;
+padding-left:5px;
+text-align:left;
+z-index:5;
+}
+
+.termsOfUse_input{
+width:100%;
+}
+
+#purpose{
+height:60px;
+resize:none;
+border: 1px solid #bbb;
+font-family: "Myriad Pro",Corbel,Tahoma,"Trebuchet MS",sans-serif;
+font-size:14px;
+padding:0px 5px;
+}
+
+#userInfoTermsDiv .dijitInputContainer {
+height: 24px;
+}
+
+#userInfoTermsDiv .dijitInputInner {
+padding-left: 10px !important;
+height: 24px;
+}
+
+#userInfoTermsDiv .dijitPlaceHolder{
+left:10px !important;
+height: 24px;
+line-height: 24px;
+}
+
+@-moz-document url-prefix() {
+    #emailDiv {
+		width: 205px;
+	}
+	
+	#countryDiv {
+		width:105px;
+	}
+	
+	#purposeDiv {
+        width:510px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
